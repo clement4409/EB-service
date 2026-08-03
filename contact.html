@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devis gratuit — EB SERVICE, Vertou (44)</title>
+  <meta name="description" content="Demandez un devis gratuit à EB SERVICE : entretien d'espaces verts et élagage à Vertou et en Loire-Atlantique. Tél. 06 63 84 64 05.">
+  <link rel="icon" href="assets/img/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="hero-light">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container">
+        <a href="tel:+33663846405">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.4 2.1L8.1 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
+          06 63 84 64 05
+        </a>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Vertou &amp; Loire-Atlantique
+        </span>
+      </div>
+    </div>
+    <div class="container nav">
+      <a href="index.html" class="nav__logo" aria-label="EB SERVICE — accueil">
+        <img class="logo-img" src="assets/img/logo.webp" alt="EB SERVICE — Entretien Espaces Verts" width="680" height="200">
+      </a>
+      <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html" class="btn btn--ghost nav__cta active">Devis gratuit</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO PAGE -->
+  <section class="hero-page">
+    <div class="hero-page__media">
+      <img src="assets/img/jardin-2.jpg" alt="" width="3532" height="3207" fetchpriority="high">
+    </div>
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Accueil</a> — Devis gratuit</p>
+      <h1>Demander un devis</h1>
+      <p>Le plus rapide reste l'appel. Sinon, décrivez votre besoin ci-dessous : nous vous recontactons pour convenir d'une visite.</p>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE -->
+  <section class="section bg-cream">
+    <div class="container rdv-layout">
+
+      <div class="reveal">
+        <span class="eyebrow">Votre demande</span>
+        <h2 class="section-title">Parlez-nous de votre terrain</h2>
+        <p class="section-lead" style="margin-bottom:34px">Plus votre description est précise (surface approximative, hauteur des haies, accès), plus le devis sera juste dès la première visite.</p>
+
+        <div class="form-card">
+          <form id="rdv-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="nom">Nom et prénom <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="nom" name="nom" autocomplete="name" required>
+                <span class="err-msg">Merci d'indiquer votre nom.</span>
+              </div>
+              <div class="field">
+                <label for="tel">Téléphone <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" required>
+                <span class="err-msg">Numéro de téléphone invalide.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+              <span class="err-msg">Adresse email invalide.</span>
+            </div>
+
+            <div class="field">
+              <label for="adresse">Adresse du chantier</label>
+              <input type="text" id="adresse" name="adresse" autocomplete="street-address" placeholder="Rue, code postal, commune">
+              <span class="hint">Utile pour vérifier que la commune est dans notre zone d'intervention.</span>
+            </div>
+
+            <div class="field">
+              <label id="presta-label">Prestation souhaitée <span class="req" aria-hidden="true">*</span></label>
+              <div class="pills" role="group" aria-labelledby="presta-label">
+                <span class="pill"><input type="checkbox" id="p1" name="prestation" value="Entretien d'espaces verts"><label for="p1">Entretien d'espaces verts</label></span>
+                <span class="pill"><input type="checkbox" id="p2" name="prestation" value="Élagage"><label for="p2">Élagage</label></span>
+                <span class="pill"><input type="checkbox" id="p3" name="prestation" value="Taille de haies"><label for="p3">Taille de haies</label></span>
+                <span class="pill"><input type="checkbox" id="p4" name="prestation" value="Remise en état"><label for="p4">Remise en état</label></span>
+                <span class="pill"><input type="checkbox" id="p5" name="prestation" value="Massifs &amp; plantations"><label for="p5">Massifs &amp; plantations</label></span>
+                <span class="pill"><input type="checkbox" id="p6" name="prestation" value="Aménagement extérieur"><label for="p6">Aménagement extérieur</label></span>
+              </div>
+              <span class="err-msg">Sélectionnez au moins une prestation.</span>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div class="field">
+                <label for="creneau">Créneau préféré</label>
+                <select id="creneau" name="creneau">
+                  <option value="">Indifférent</option>
+                  <option value="Matin">Matin</option>
+                  <option value="Après-midi">Après-midi</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Décrivez votre besoin</label>
+              <textarea id="message" name="message" placeholder="Ex. : haie de 30 m à tailler sur 2 faces, hauteur 2,50 m, accès par le portail latéral."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Envoyer ma demande
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-note">Les champs marqués d'un <span class="req">*</span> sont obligatoires. Vos informations servent uniquement à vous recontacter au sujet de cette demande.</p>
+          </form>
+
+          <div class="form-success" id="form-success" role="status" aria-live="polite">
+            <strong>Merci <span class="recap-name"></span> !</strong>
+            <p>Votre demande a bien été enregistrée : <span class="recap-details"></span></p>
+            <p style="margin-top:10px">Nous vous rappelons rapidement au numéro indiqué. Pour une réponse immédiate, appelez-nous directement.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+              <a class="btn btn--primary" href="tel:+33663846405">Appeler le 06 63 84 64 05</a>
+              <a class="btn btn--ghost recap-mail" href="#">Ouvrir dans ma messagerie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ASIDE INFOS -->
+      <aside class="rdv-aside reveal">
+        <div class="info-box">
+          <h3>Nous contacter</h3>
+          <div class="info-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.4 2.1L8.1 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
+            <span><a href="tel:+33663846405">06 63 84 64 05</a><small>Le plus rapide pour nous joindre</small></span>
+          </div>
+          <div class="info-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><a href="https://www.google.com/maps/search/?api=1&amp;query=5bis+Rte+de+Saint-Fiacre+44120+Vertou" target="_blank" rel="noopener">5bis Rte de Saint-Fiacre<br>44120 Vertou</a><small>Voir sur la carte</small></span>
+          </div>
+          <div class="info-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Lun – Ven : 08h00 – 18h00<small>Samedi et dimanche : fermé</small></span>
+          </div>
+          <div class="info-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg>
+            <span>Loire-Atlantique (44)<small>Vertou, Nantes et environs</small></span>
+          </div>
+        </div>
+
+        <div class="call-card">
+          <ul class="hours" id="hours">
+            <li data-day="1"><span class="day">Lundi</span><span class="h">08:00 – 18:00</span></li>
+            <li data-day="2"><span class="day">Mardi</span><span class="h">08:00 – 18:00</span></li>
+            <li data-day="3"><span class="day">Mercredi</span><span class="h">08:00 – 18:00</span></li>
+            <li data-day="4"><span class="day">Jeudi</span><span class="h">08:00 – 18:00</span></li>
+            <li data-day="5"><span class="day">Vendredi</span><span class="h">08:00 – 18:00</span></li>
+            <li data-day="6"><span class="day">Samedi</span><span class="h h--closed">Fermé</span></li>
+            <li data-day="0"><span class="day">Dimanche</span><span class="h h--closed">Fermé</span></li>
+          </ul>
+        </div>
+
+        <div class="call-card">
+          <div class="amount">Devis gratuit</div>
+          <p>Déplacement offert sur Vertou et la Loire-Atlantique, sans engagement de votre part.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><img class="logo-img" src="assets/img/logo.webp" alt="EB SERVICE" width="680" height="200" loading="lazy"></div>
+          <p>Entretien des espaces verts et élagage à Vertou et dans toute la Loire-Atlantique. Particuliers, copropriétés et professionnels.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="prestations.html">Prestations</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Devis gratuit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+33663846405">06 63 84 64 05</a></li>
+            <li>5bis Rte de Saint-Fiacre<br>44120 Vertou</li>
+            <li>Loire-Atlantique (44)</li>
+            <li>Lun – Ven : 08h00 – 18h00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="year">2026</span> EB SERVICE. Tous droits réservés.</span>
+        <span>Entretien des espaces verts &amp; élagage</span>
+        <span class="footer-credit">Site réalisé par <a href="https://clement4409.github.io/portfolio/" target="_blank" rel="noopener">A&amp;C Agency</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
